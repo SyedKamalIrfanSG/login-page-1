@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+        font-family: Arial, sans-serif;
+
+
+}
+
+body{
+    background-image: url('login.jpg');
+    background-size: cover;
+    background-clip: text;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.entire{
+    background-color: rgba(200,200,200,0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 15px;
+    color: aliceblue;
+    width: 300px;
+    text-align: center;
+    box-shadow: 100px,50px;
+    animation: ani 1.5s ease-in-out;
+}
+@keyframes ani {
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+h1{
+   
+    margin-bottom: 21px;
+
+}
+.logincontainer{
+   margin: 15px;
+
+}
+.logincontainer input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom:1px solid white;
+    background: transparent;
+    color: aliceblue;
+    outline: none;
+    outline: none;
+}
+::placeholder{
+    color: rgb(253, 254, 254);
+}
+.login-btn{
+width: 100%;
+background-color: rgba(200,200,200,0.1);
+padding: 5px;
+margin: 10px;
+color: aliceblue;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+transition: 1s;
+
+}
+.or{
+    margin: 15px;
+
+}
+.social-btn{
+   display: flex;
+   justify-content: space-between;
+}
+.btn{
+  
+    width: 45%;
+    background-color: rgba(200,200,200,0.1);
+    border: none;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 5px;
+    animation-name: btn;
+    animation-duration: 5.5s;
+    animation-delay: 5.5s;
+    animation-direction: right;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+}
+.newuser{
+    margin-top: 19px;
+
+}
+.newuser a{
+    color: gold;
+}
+:hover.login-btn{
+    background-color: rgba(200,200,200,0.9);
+    color: black;
+}
+/* @keyframes btn{
+    from{
+        background: rgba(200,200,200,0.1);
+    }
+    to{
+        background-color: rgba(200,200,200,0.25);
+    }
+} */
+:hover.btn{
+    background-color: rgba(200,200,200,0.25);
+    background: transparent;
+    transition: 1s;
+}
+:active.btn{
+    color: hsl(0, 0%, 5%);
+    border-bottom-color: black;
+    font-size: small;
+}
